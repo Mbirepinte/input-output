@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'input-output';
+
+  public onomatopoeia: string[] = ["Meow","waouf"];
+
+  onReceiveNewOnomatopoeia(value: any) :void {
+    console.log("coucou")
+    this.onomatopoeia.push(value);
+  }
 }

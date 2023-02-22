@@ -1,1 +1,5 @@
-<app-developper></app-developper>
+<h1> Liste des onomatopées</h1>
+<ul>
+  <li *ngFor="let onomatopeia of onomatopoeia">{{onomatopeia}}</li>
+  <app-createOnomatopeia (createOnomatopeia)="onReceiveNewOnomatopoeia($event)"> </app-createOnomatopeia>
+</ul>
